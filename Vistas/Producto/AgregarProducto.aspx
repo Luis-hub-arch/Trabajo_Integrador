@@ -14,6 +14,7 @@
         .auto-style3 {
             width: 184px;
             text-align: center;
+            font-size: xx-large;
         }
         .auto-style5 {
             text-align: right;
@@ -42,7 +43,7 @@
             font-size: large;
         }
         .auto-style14 {
-            width: 53%;
+            width: 61%;
             margin-left: 34px;
         }
         .auto-style15 {
@@ -60,6 +61,13 @@
         .auto-style13 {
             width: 258px;
         }
+        .auto-style18 {
+            height: 23px;
+            width: 353px;
+        }
+        .auto-style19 {
+            width: 353px;
+        }
     </style>
 </head>
 <body>
@@ -67,17 +75,17 @@
         <div>
     <table class="auto-style1">
         <tr>
-            <td class="auto-style3">Producto</td>
+            <td class="auto-style3"><strong>Producto</strong></td>
             <td class="auto-style5">Usuario<table class="auto-style1">
                 <tr>
                     <td class="auto-style10">
-                        <asp:HyperLink ID="HyperLink1" runat="server">Crear Producto</asp:HyperLink>
+                        <asp:HyperLink ID="HyperLink1" runat="server" NavigateUrl="~/Producto/AgregarProducto.aspx">Crear Producto</asp:HyperLink>
                     </td>
                     <td class="auto-style11">
-                        <asp:HyperLink ID="HyperLink2" runat="server">Eliminar Producto</asp:HyperLink>
+                        <asp:HyperLink ID="HyperLink2" runat="server" NavigateUrl="~/Producto/EliminarProducto.aspx">Eliminar Producto</asp:HyperLink>
                     </td>
                     <td class="auto-style9">
-                        <asp:HyperLink ID="HyperLink3" runat="server">Buscar Producto</asp:HyperLink>
+                        <asp:HyperLink ID="HyperLink3" runat="server" NavigateUrl="~/Producto/BuscarProducto.aspx">Buscar Producto</asp:HyperLink>
                     </td>
                     <td class="auto-style8">
                     </td>
@@ -91,43 +99,57 @@
             <table align="center" class="auto-style14">
                 <tr>
                     <td class="auto-style15">Nombre </td>
-                    <td class="auto-style16">
-                        <asp:TextBox ID="TextBox1" runat="server" Width="216px"></asp:TextBox>
+                    <td class="auto-style18">
+                        <asp:TextBox ID="txtNombre" runat="server" Width="216px" OnTextChanged="txtNombre_TextChanged"></asp:TextBox>
                     </td>
+                    <td class="auto-style16">
+                        &nbsp;</td>
                 </tr>
                 <tr>
                     <td class="auto-style17">Marca</td>
-                    <td>
-                        <asp:TextBox ID="TextBox2" runat="server" Width="216px"></asp:TextBox>
+                    <td class="auto-style19">
+                        <asp:TextBox ID="txtMarca" runat="server" Width="216px"></asp:TextBox>
                     </td>
+                    <td>
+                        &nbsp;</td>
                 </tr>
                 <tr>
                     <td class="auto-style17">Precio Unitario</td>
-                    <td>
-                        <asp:TextBox ID="TextBox3" runat="server" Width="214px"></asp:TextBox>
+                    <td class="auto-style19">
+                        <asp:TextBox ID="txtPrecioU" runat="server" Width="214px"></asp:TextBox>
                     </td>
+                    <td>
+                        &nbsp;</td>
                 </tr>
                 <tr>
                     <td class="auto-style17">Categoria</td>
-                    <td>
-                        <asp:DropDownList ID="DropDownList1" runat="server" Height="16px" Width="220px">
+                    <td class="auto-style19">
+                        <asp:DropDownList ID="ddlCategoria" runat="server" Height="16px" Width="220px">
                         </asp:DropDownList>
                     </td>
+                    <td>
+                        &nbsp;</td>
                 </tr>
                 <tr>
                     <td class="auto-style17">Stock</td>
-                    <td>
-                        <asp:TextBox ID="TextBox4" runat="server" Width="214px"></asp:TextBox>
+                    <td class="auto-style19">
+                        <asp:TextBox ID="txtStock" runat="server" Width="214px"></asp:TextBox>
                     </td>
+                    <td>
+                        &nbsp;</td>
                 </tr>
                 <tr>
                     <td class="auto-style17">&nbsp;</td>
+                    <td class="auto-style19">&nbsp;</td>
                     <td>&nbsp;</td>
                 </tr>
                 <tr>
                     <td class="auto-style13">&nbsp;</td>
+                    <td class="auto-style19">
+                        <asp:Button ID="btnAgregar" runat="server" OnClick="btnAgregar_Click" Text="Agregar" Width="217px" />
+                    </td>
                     <td>
-                        <asp:Button ID="Button1" runat="server" Text="Crear" Width="129px" />
+                        <asp:Label ID="lblMensaje" runat="server"></asp:Label>
                     </td>
                 </tr>
             </table>

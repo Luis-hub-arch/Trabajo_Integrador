@@ -14,6 +14,7 @@
         .auto-style3 {
             width: 184px;
             text-align: center;
+            font-size: xx-large;
         }
         .auto-style5 {
             text-align: right;
@@ -48,27 +49,24 @@
         .auto-style15 {
             width: 348px;
         }
-        .auto-style14 {
-            margin-left: 0px;
-        }
-    </style>
+        </style>
 </head>
 <body>
     <form id="form1" runat="server">
         <div>
     <table class="auto-style1">
         <tr>
-            <td class="auto-style3">Categorias</td>
+            <td class="auto-style3">Producto</td>
             <td class="auto-style5">Usuario<table class="auto-style1">
                 <tr>
                     <td class="auto-style10">
-                        <asp:HyperLink ID="HyperLink1" runat="server">Crear Producto</asp:HyperLink>
+                        <asp:HyperLink ID="HyperLink1" runat="server" NavigateUrl="~/Producto/AgregarProducto.aspx">Crear Producto</asp:HyperLink>
                     </td>
                     <td class="auto-style11">
-                        <asp:HyperLink ID="HyperLink2" runat="server">Eliminar Producto</asp:HyperLink>
+                        <asp:HyperLink ID="HyperLink2" runat="server" NavigateUrl="~/Producto/EliminarProducto.aspx">Eliminar Producto</asp:HyperLink>
                     </td>
                     <td class="auto-style9">
-                        <asp:HyperLink ID="HyperLink3" runat="server">Buscar Producto</asp:HyperLink>
+                        <asp:HyperLink ID="HyperLink3" runat="server" NavigateUrl="~/Producto/BuscarProducto.aspx">Buscar Producto</asp:HyperLink>
                     </td>
                     <td class="auto-style8">
                     </td>
@@ -81,15 +79,21 @@
                 <strong>Buscar Producto</strong></p>
             <table class="auto-style1">
                 <tr>
-                    <td class="auto-style13">Ingrese ID de Categoria: </td>
+                    <td class="auto-style13">Ingrese ID del Producto: </td>
                     <td class="auto-style15">
-                        <asp:TextBox ID="TextBox1" runat="server" Width="320px"></asp:TextBox>
+                        <asp:TextBox ID="txtIdProd" runat="server" Width="320px"></asp:TextBox>
                     </td>
                     <td>
-                        <asp:Button ID="Button1" runat="server" CssClass="auto-style14" Text="Buscar" Width="113px" />
+                        <asp:Button ID="btnBuscar" runat="server" OnClick="btnBuscar_Click" Text="Buscar" />
+                    </td>
+                    <td>
+                        <asp:Button ID="btnMostarTodos" runat="server" OnClick="btnMostarTodos_Click" Text="Mostar Todos" />
                     </td>
                 </tr>
             </table>
+            <br />
+            <asp:GridView ID="grdProductos" runat="server" Width="1392px">
+            </asp:GridView>
         </div>
     </form>
 </body>

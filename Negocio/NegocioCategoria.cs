@@ -59,6 +59,5 @@ namespace Negocio
             DaoCategoria dao = new DaoCategoria();
             return dao.getCategoria(cod);
         }
-
-    }
+    }   
 }
