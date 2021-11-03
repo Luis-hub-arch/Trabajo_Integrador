@@ -70,15 +70,27 @@
     <Content Include="Categoria\AgregarCategoria.aspx" />
     <Content Include="Categoria\BuscarCategoria.aspx" />
     <Content Include="Categoria\EliminarCategoria.aspx" />
+    <Content Include="Clientes\AgregarCliente.aspx" />
+    <Content Include="Clientes\BuscarCliente.aspx" />
+    <Content Include="Clientes\EliminarCliente.aspx" />
+    <Content Include="DetalleDeVentas\AgregarDetalleDeVentas.aspx" />
+    <Content Include="DetalleDeVentas\BuscarDetalleDeVentas.aspx" />
+    <Content Include="DetalleDeVentas\EliminarDetalleDeVentas.aspx" />
     <Content Include="LoginForm.aspx" />
     <Content Include="PanelAdm.aspx" />
     <Content Include="Producto\AgregarProducto.aspx" />
     <Content Include="Producto\BuscarProducto.aspx" />
     <Content Include="Producto\EliminarProducto.aspx" />
+    <Content Include="Proveedores\AgregarProveedor.aspx" />
+    <Content Include="Proveedores\BuscarProveedor.aspx" />
+    <Content Include="Proveedores\EliminarProveedor.aspx" />
     <Content Include="Usuario\AgregarUsuario.aspx" />
     <Content Include="Usuario\BuscarUsuario.aspx" />
     <Content Include="Usuario\EliminarUsuario.aspx" />
     <Content Include="Usuario\ModificarUsuario.aspx" />
+    <Content Include="Ventas\AgregarVenta.aspx" />
+    <Content Include="Ventas\BuscarVenta.aspx" />
+    <Content Include="Ventas\EliminarVenta.aspx" />
     <Content Include="Web.config" />
   </ItemGroup>
   <ItemGroup>
@@ -102,6 +114,48 @@
     </Compile>
     <Compile Include="Categoria\EliminarCategoria.aspx.designer.cs">
       <DependentUpon>EliminarCategoria.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Clientes\AgregarCliente.aspx.cs">
+      <DependentUpon>AgregarCliente.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Clientes\AgregarCliente.aspx.designer.cs">
+      <DependentUpon>AgregarCliente.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Clientes\BuscarCliente.aspx.cs">
+      <DependentUpon>BuscarCliente.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Clientes\BuscarCliente.aspx.designer.cs">
+      <DependentUpon>BuscarCliente.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Clientes\EliminarCliente.aspx.cs">
+      <DependentUpon>EliminarCliente.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Clientes\EliminarCliente.aspx.designer.cs">
+      <DependentUpon>EliminarCliente.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="DetalleDeVentas\AgregarDetalleDeVentas.aspx.cs">
+      <DependentUpon>AgregarDetalleDeVentas.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="DetalleDeVentas\AgregarDetalleDeVentas.aspx.designer.cs">
+      <DependentUpon>AgregarDetalleDeVentas.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="DetalleDeVentas\BuscarDetalleDeVentas.aspx.cs">
+      <DependentUpon>BuscarDetalleDeVentas.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="DetalleDeVentas\BuscarDetalleDeVentas.aspx.designer.cs">
+      <DependentUpon>BuscarDetalleDeVentas.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="DetalleDeVentas\EliminarDetalleDeVentas.aspx.cs">
+      <DependentUpon>EliminarDetalleDeVentas.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="DetalleDeVentas\EliminarDetalleDeVentas.aspx.designer.cs">
+      <DependentUpon>EliminarDetalleDeVentas.aspx</DependentUpon>
     </Compile>
     <Compile Include="LoginForm.aspx.cs">
       <DependentUpon>LoginForm.aspx</DependentUpon>
@@ -139,6 +193,27 @@
       <DependentUpon>EliminarProducto.aspx</DependentUpon>
     </Compile>
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Proveedores\AgregarProveedor.aspx.cs">
+      <DependentUpon>AgregarProveedor.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Proveedores\AgregarProveedor.aspx.designer.cs">
+      <DependentUpon>AgregarProveedor.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Proveedores\BuscarProveedor.aspx.cs">
+      <DependentUpon>BuscarProveedor.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Proveedores\BuscarProveedor.aspx.designer.cs">
+      <DependentUpon>BuscarProveedor.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Proveedores\EliminarProveedor.aspx.cs">
+      <DependentUpon>EliminarProveedor.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Proveedores\EliminarProveedor.aspx.designer.cs">
+      <DependentUpon>EliminarProveedor.aspx</DependentUpon>
+    </Compile>
     <Compile Include="Usuario\AgregarUsuario.aspx.cs">
       <DependentUpon>AgregarUsuario.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
@@ -166,6 +241,27 @@
     </Compile>
     <Compile Include="Usuario\ModificarUsuario.aspx.designer.cs">
       <DependentUpon>ModificarUsuario.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Ventas\AgregarVenta.aspx.cs">
+      <DependentUpon>AgregarVenta.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Ventas\AgregarVenta.aspx.designer.cs">
+      <DependentUpon>AgregarVenta.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Ventas\BuscarVenta.aspx.cs">
+      <DependentUpon>BuscarVenta.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Ventas\BuscarVenta.aspx.designer.cs">
+      <DependentUpon>BuscarVenta.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Ventas\EliminarVenta.aspx.cs">
+      <DependentUpon>EliminarVenta.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Ventas\EliminarVenta.aspx.designer.cs">
+      <DependentUpon>EliminarVenta.aspx</DependentUpon>
     </Compile>
   </ItemGroup>
   <ItemGroup>
