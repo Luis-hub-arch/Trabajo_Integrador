@@ -1,0 +1,6 @@
+C:\Users\crest\Desktop\TP INTEGRADOR FINAL PROG III\GitLuis\Trabajo_Integrador-master\Entidades\bin\Debug\Entidades.dll
+C:\Users\crest\Desktop\TP INTEGRADOR FINAL PROG III\GitLuis\Trabajo_Integrador-master\Entidades\bin\Debug\Entidades.pdb
+C:\Users\crest\Desktop\TP INTEGRADOR FINAL PROG III\GitLuis\Trabajo_Integrador-master\Entidades\obj\Debug\Entidades.csproj.AssemblyReference.cache
+C:\Users\crest\Desktop\TP INTEGRADOR FINAL PROG III\GitLuis\Trabajo_Integrador-master\Entidades\obj\Debug\Entidades.csproj.CoreCompileInputs.cache
+C:\Users\crest\Desktop\TP INTEGRADOR FINAL PROG III\GitLuis\Trabajo_Integrador-master\Entidades\obj\Debug\Entidades.dll
+C:\Users\crest\Desktop\TP INTEGRADOR FINAL PROG III\GitLuis\Trabajo_Integrador-master\Entidades\obj\Debug\Entidades.pdb
