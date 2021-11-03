@@ -144,6 +144,16 @@ namespace Dao
             return FilasCambiadas;
         }
 
+        private DataTable ObtenerTabla(String NombreTabla, String Sql)
+        {
+            DataSet ds = new DataSet();
+            SqlConnection Conexion = ObtenerConexion();
+            SqlDataAdapter adp = ObtenerAdaptador(Sql, Conexion);
+            adp.Fill(ds, NombreTabla);
+            Conexion.Close();
+            return ds.Tables[NombreTabla];
+
+        }
 
 
     }

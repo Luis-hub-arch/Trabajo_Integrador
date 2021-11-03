@@ -34,11 +34,28 @@
             text-align: center;
         }
         .auto-style12 {
-            width: 319px;
+            width: 472px;
             text-align: right;
         }
         .auto-style13 {
-            width: 399px;
+            width: 374px;
+        }
+        .auto-style14 {
+            width: 99%;
+        }
+        .auto-style15 {
+            width: 472px;
+            text-align: right;
+            height: 43px;
+        }
+        .auto-style16 {
+            width: 374px;
+            height: 43px;
+            text-align: center;
+        }
+        .auto-style17 {
+            text-align: center;
+            height: 43px;
         }
     </style>
 </head>
@@ -70,13 +87,21 @@
         </div>
         <p class="auto-style8">
             Eliminar Usuario</p>
-        <table class="auto-style1">
+        <table class="auto-style14">
             <tr>
                 <td class="auto-style12">Ingrese ID Usuario </td>
                 <td class="auto-style13">&nbsp;&nbsp;&nbsp;&nbsp;
-                    <asp:TextBox ID="TextBox8" runat="server" Width="333px"></asp:TextBox>
+                    <asp:TextBox ID="txtIdUsuario" runat="server" Width="333px"></asp:TextBox>
                 </td>
-                <td>&nbsp;&nbsp;<asp:Button ID="Button1" runat="server" Text="Eliminar" Width="147px" />
+                <td class="auto-style8">&nbsp;&nbsp;<asp:Button ID="btnEliminar" runat="server" Text="Eliminar" Width="147px" OnClick="btnEliminar_Click" />
+                </td>
+            </tr>
+            <tr>
+                <td class="auto-style15"> </td>
+                <td class="auto-style16">
+                    <asp:Label ID="lblMensaje" runat="server" Text="Label"></asp:Label>
+                </td>
+                <td class="auto-style17">
                 </td>
             </tr>
         </table>

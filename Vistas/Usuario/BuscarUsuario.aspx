@@ -80,7 +80,7 @@
             Listado de Usuarios</p>
         <table class="auto-style1">
             <tr>
-                <td class="auto-style12">Busqueda nombre de usuario </td>
+                <td class="auto-style12">Busqueda ID de usuario </td>
                 <td class="auto-style13">&nbsp;&nbsp;&nbsp;&nbsp;
                     <asp:TextBox ID="txtUsuario" runat="server" Width="333px"></asp:TextBox>
                 </td>
@@ -91,7 +91,7 @@
         </table>
         <br />
         <div class="auto-style15">
-            <asp:GridView ID="grdUsuarios" runat="server">
+            <asp:GridView ID="grdUsuarios" runat="server" Width="1322px">
             </asp:GridView>
         </div>
     </form>

@@ -12,24 +12,34 @@ namespace Entidades
         private String Nombre;
         private String Apellido;
         private string Email;
-        private String Telefono;
-        private string Dni;
+        private int Telefono;
+        private int Dni;
         private String Direccion;
-        private String Contraseña;
-        private string tipoUsuario;
+        private String Password;
+        private string TipoUsuario;
 
         public Usuario()
         { }
 
-        public int IdCliente1 { get => IdCliente; set => IdCliente = value; }
-        public string Nombre1 { get => Nombre; set => Nombre = value; }
-        public string Apellido1 { get => Apellido; set => Apellido = value; }
-        public string Email1 { get => Email; set => Email = value; }
-        
-        public string Direccion1 { get => Direccion; set => Direccion = value; }
-        public string Contraseña1 { get => Contraseña; set => Contraseña = value; }
-        public string TipoUsuario { get => tipoUsuario; set => tipoUsuario = value; }
-        public string Telefono1 { get => Telefono; set => Telefono = value; }
-        public string Dni1 { get => Dni; set => Dni = value; }
+        public int GetIdCliente() { return IdCliente; }
+        public string GetNombre() { return Nombre; }
+        public String GetApellido() { return Apellido; }
+        public string GetEmail() { return Email; }
+        public int GetTelefono() { return Telefono; }
+        public int GetDni() { return Dni; }
+        public String GetDireccion() { return Direccion; }
+        public string GetPassword() { return Password; }
+        public String GetTipoUsuario() { return TipoUsuario; }
+
+        public void SetIdCliente(int IdCliente) { this.IdCliente = IdCliente; }
+        public void SetNombre(String nombre_) { this.Nombre = nombre_ ; }
+        public void SetApellido(String apellido_) { this.Apellido = apellido_; }
+        public void SetEmail(string email_) { this.Email = email_; }
+        public void SetTelefono(int telefono_) { this.Telefono = telefono_; }
+        public void SetDni(int dni_) {this.Dni = dni_; }
+        public void SetDireccion(string direccion_) {this.Direccion = direccion_; }
+        public void SetPassword(string password_) {this.Password = password_; }
+        public void SetTipoUsuario(string tipousuario_) {this.TipoUsuario = tipousuario_; }
+
     }
 }
